@@ -1,3 +1,21 @@
 body{
-    background-color: #ffaa00;
+    background-color: #FBFADA;
+
+    
+}
+.important{
+    font-size: large;
+    font-weight: 200;
+}
+.text-box{
+    background-color: #638889;
+    max-width: 40%;
+    padding: 0px 10px 10px 0;
+    border: 3px solid #9DBC98;
+    
+}
+.title {
+    background-color: #ADBC9F;
+    border: 3px solid #436850;
+    max-width: 80%;
 }
