@@ -1,5 +1,6 @@
 function loaded() {
     console.log("The page has now loaded");
+    fontrandom();
 }
 function display(x){
     console.log("hello")
@@ -23,6 +24,19 @@ function display(x){
             text ="dispy would be a terrorist";
             id = "d";
             break;
+        default:
+            break;
     }
-    document.getElementById(id).innerHTML= text ;
+    document.getElementById(id).innerHTML= text;
 }
+
+function fontrandom(){
+    let listOfFonts = ["monospace", "Courier", "Courier new", "Gill Sans","Calibri"];
+    Array.from(document.all).forEach(element => {
+        fontIndex = Math.floor(Math.random() * listOfFonts.length);
+        element.style = "font-family: " + listOfFonts[fontIndex];
+        console.log(element);
+    })
+}
+
+window.addEventListener("load", loaded)
