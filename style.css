@@ -1,7 +1,5 @@
 body{
     background-color: #FBFADA;
-
-    
 }
 .important{
     font-size: large;
@@ -24,11 +22,9 @@ body{
     justify-content: center;
 }
 .text-box2{
-
     background-color: #ADBC9F;
     border: 3px solid #436850;
     max-width: 100%;
-
 }
 #image{
     width: 50%;
@@ -36,5 +32,9 @@ body{
     float: right;
     margin-top: 170px;
     height: 200px;
-    
+}
+.text-box3{
+    background-color: #ADBC9F;
+    border: 3px solid #436850;
+    max-width: 100%;
 }
