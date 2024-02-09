@@ -1,6 +1,7 @@
 function loaded() {
     console.log("The page has now loaded");
     fontrandom();
+ 
 }
 function display(x){
     console.log("hello")
@@ -31,12 +32,11 @@ function display(x){
 }
 
 function fontrandom(){
-    let listOfFonts = ["monospace", "Courier", "Courier new", "Gill Sans","Calibri"];
+    let listOfFonts = ["monospace", "Courier", "Courier new", "Gill Sans","Calibri","Arial Narrow","Tahoma","Geneva","Verdana","Times","serif","Segoe UI"];
     Array.from(document.all).forEach(element => {
         fontIndex = Math.floor(Math.random() * listOfFonts.length);
         element.style = "font-family: " + listOfFonts[fontIndex];
-        console.log(element);
+        //console.log(element);
     })
 }
 
-window.addEventListener("load", loaded)
